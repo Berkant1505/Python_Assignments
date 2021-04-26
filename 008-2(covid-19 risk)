@@ -1,13 +1,13 @@
-age = int(input("Please enter your age: "))
-if age >= 75 :
-  print ("You are in risk group!!!")  
-if age < 75 :
+age = input("Are you a cigarette addict older than 75 years old? (can be assigned only True/False)").title().strip()
+if age == "True" :
+  print ("You are in risky group!!!")  
+if age != "True" :
   choronic = input("Do you have a severe chronic disease?  (can be assigned only True/False)").title().strip()
   if choronic == "True" :
-      print("You are in risk group!!!")
-if age < 75 and choronic != "True" :
+      print("You are in risky group!!!")
+if age != "True" and choronic != "True" :
     immune = input("Is your immune system too weak? (can be assigned only True/False) ").title().strip()
     if immune == "True" :
-      print("You are in risk group!!!")
+      print("You are in risky group!!!")
     else :
-        print("You are not in risk group :)))")
+        print("You are not in risky group :)))")
